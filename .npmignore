@@ -4,6 +4,7 @@ node_modules/
 
 # typescript stuff
 *.ts
+!*.d.ts
 tsconfig.json
 
 # dev modules stuff
