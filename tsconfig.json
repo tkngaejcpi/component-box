@@ -8,11 +8,10 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "declaration": true,
 
     /* Linting */
     "strict": true,
@@ -21,10 +20,13 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Alias */
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
       "@lib/*": ["lib/*"]
-    }
+    },
+
+    "outDir": "./"
   },
-  "include": ["src"]
+  "include": ["index.ts", "lib"],
+  "exclude": []
 }

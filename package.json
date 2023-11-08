@@ -17,24 +17,25 @@
     "url": "https://github.com/tkngaejcpi/component-box/issues",
     "email": "rileycki3333@gmail.com"
   },
-  "main": "./dist/index.js",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "format": "prettier --config prettier.config.js ./ -w",
-    "build": "tsc && vite build",
+    "build": "tsc && tsc-alias",
     "test": "echo SKIP TEST",
     "preview": "vite preview"
   },
   "dependencies": {
     "@nanostores/lit": "^0.2.0",
-    "lit": "^2.7.6",
+    "lit": "^2.8.0",
     "nanostores": "^0.9.4"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.2.1",
     "prettier": "^3.0.3",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "tsc-alias": "^1.8.8",
+    "typescript": "^5.2.2"
   }
 }

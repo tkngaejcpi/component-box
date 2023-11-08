@@ -1,10 +1,8 @@
-import { Store } from 'nanostores';
-
 import { LitElement } from 'lit';
-
 import { property } from 'lit/decorators.js';
 
 import { StoreController } from '@nanostores/lit';
+import { Store } from 'nanostores';
 
 /**
  * @description StateComponent is basically LitElement with a state controller from nanostores

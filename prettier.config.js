@@ -8,16 +8,6 @@ export default {
   plugins: ['@trivago/prettier-plugin-sort-imports'],
 
   importOrderParserPlugins: ['decorators-legacy', 'typescript'],
-  importOrder: [
-    '^lit$',
-    '^lit/',
-
-    '^nanostore$',
-    '^@nanostore',
-
-    '^@lib/',
-
-    '^[./]',
-  ],
+  importOrder: ['^lit', '^@?nanostores', '^@lib/', '^[./]'],
   importOrderSeparation: true,
 };
