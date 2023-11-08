@@ -1,11 +1,29 @@
 {
-  "name": "component-box",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@rileycki3333/component-box",
+  "version": "1.0.0",
+  "author": {
+    "name": "Riley Chang",
+    "email": "rileycki3333@gmail.com"
+  },
+  "keywords": [
+    "component",
+    "web-component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkngaejcpi/component-box"
+  },
+  "bugs": {
+    "url": "https://github.com/tkngaejcpi/component-box/issues",
+    "email": "rileycki3333@gmail.com"
+  },
+  "main": "./dist/index.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "format": "prettier --config prettier.config.js ./ -w",
     "build": "tsc && vite build",
+    "test": "echo SKIP TEST",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,6 +32,8 @@
     "nanostores": "^0.9.4"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.1",
+    "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }

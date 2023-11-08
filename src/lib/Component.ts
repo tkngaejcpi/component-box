@@ -1,4 +1,4 @@
-import { LitElement } from "lit";
+import { LitElement } from 'lit';
 
 /* types */
 
@@ -53,15 +53,15 @@ export const emptyTheme: EmptyTheme = '';
 
 const ensureGetThemeNode = (tag: string): HTMLStyleElement => {
   const currentThemeNode = document.getElementById(
-    `-component-box-${tag}-theme`
+    `-component-box-${tag}-theme`,
   );
 
-  if (currentThemeNode && currentThemeNode.tagName == "style") {
+  if (currentThemeNode && currentThemeNode.tagName == 'style') {
     return currentThemeNode as HTMLStyleElement;
   }
 
-  const newThemeNode = document.createElement("style");
-  document.getElementsByTagName("body")[0]!.appendChild(newThemeNode);
+  const newThemeNode = document.createElement('style');
+  document.getElementsByTagName('body')[0]!.appendChild(newThemeNode);
 
   return newThemeNode;
 };
@@ -69,7 +69,7 @@ const ensureGetThemeNode = (tag: string): HTMLStyleElement => {
 /**
  * @param cp component pair
  * @param theme raw string of css
- * 
+ *
  * @description inject a style to body for the component
  */
 export const injectTheme = (cp: ComponentPair, theme: Theme): void => {

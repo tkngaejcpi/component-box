@@ -1,11 +1,12 @@
-import { css, html } from "lit";
-import { StateComponent } from "@lib/StateComponent";
-import { $state, CounterState, increase } from "../states/counter";
-import { ComponentPair, Theme } from "@lib/Component";
+import { css, html } from 'lit';
 
-import theme from "./TestDefaultTheme.css?inline";
+import { ComponentPair, Theme } from '@lib/Component';
+import { StateComponent } from '@lib/StateComponent';
 
-export const tag = "vvv-test" as const;
+import { $state, CounterState, increase } from '../states/counter';
+import theme from './TestDefaultTheme.css?inline';
+
+export const tag = 'vvv-test' as const;
 
 export class Test extends StateComponent<CounterState> {
   constructor() {
